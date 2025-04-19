@@ -5,3 +5,4 @@ torch
 gtts
 git+https://github.com/openai/whisper
 ffmpeg-python
+sentencepiece
