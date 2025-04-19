@@ -6,15 +6,12 @@ from speech import speech_to_text, text_to_speech
 import shutil
 import os
 
-# ✅ Define app before using any @app decorators
 app = FastAPI()
 
-# ✅ Optional root route
 @app.get("/")
 def home():
     return {"message": "Welcome to the AI Translator API!"}
 
-# Request body model
 class TranslateRequest(BaseModel):
     text: str
 
@@ -40,7 +37,7 @@ async def tts(req: TranslateRequest):
     mp3_path = text_to_speech(req.text)
     return FileResponse(mp3_path, media_type="audio/mpeg", filename=mp3_path)
 
-# ✅ Optional: Run server from script
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+
