@@ -2,6 +2,7 @@ import streamlit as st
 from transformers import MarianMTModel, MarianTokenizer
 from gtts import gTTS
 import os
+import uuid
 
 st.set_page_config(page_title="AI Translator", layout="centered")
 
@@ -28,7 +29,8 @@ if st.button("Translate"):
 
         if st.button("🔊 Listen in Hindi"):
             tts = gTTS(text=translated, lang='hi')
-            tts.save("output.mp3")
-            st.audio("output.mp3", format="audio/mp3")
+            filename = f"{uuid.uuid4()}.mp3"
+            tts.save(filename)
+            st.audio(filename, format="audio/mp3")
     else:
         st.warning("Please enter some text first.")
