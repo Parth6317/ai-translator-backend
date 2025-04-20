@@ -6,7 +6,7 @@ import uuid
 st.set_page_config(page_title="AI Translator", layout="centered")
 
 st.title("🌐 English Translator")
-st.markdown("Enter English text, select a language, and get the translation with optional audio.")
+st.markdown("Enter English text, select a language, and get the translation .")
 
 # Language model mappings
 language_options = {
