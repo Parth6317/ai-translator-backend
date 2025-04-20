@@ -11,8 +11,9 @@ st.markdown("Enter English text, select a language, and get the translation with
 # Language model mappings
 language_options = {
     "Hindi": "Helsinki-NLP/opus-mt-en-hi",
-    "Gujarati": "Helsinki-NLP/opus-mt-en-gu"
+    "Gujarati": "Helsinki-NLP/opus-mt-en-guj"
 }
+
 
 # Select language
 target_lang = st.selectbox("Choose target language:", list(language_options.keys()))
