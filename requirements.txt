@@ -1,8 +1,6 @@
 streamlit
 transformers
 torch==2.0.1
-
 gtts
-git+https://github.com/openai/whisper
-ffmpeg-python
 sentencepiece
+sacremoses
