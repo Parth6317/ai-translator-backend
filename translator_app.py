@@ -8,10 +8,15 @@ st.set_page_config(page_title="AI Translator", layout="centered")
 st.title("🌐 English to Hindi Translator")
 st.markdown("Enter your English text below and get a Hindi translation with optional audio.")
 
-# Use only Hindi model (the working one)
-model_name = "Helsinki-NLP/opus-mt-en-hi"
-tokenizer = MarianTokenizer.from_pretrained(model_name)
-model = MarianMTModel.from_pretrained(model_name)
+@st.cache_resource
+def load_model():
+    model_name = "Helsinki-NLP/opus-mt-en-hi"
+    tokenizer = MarianTokenizer.from_pretrained(model_name)
+    model = MarianMTModel.from_pretrained(model_name)
+    return tokenizer, model
+
+tokenizer, model = load_model()
+
 
 def translate_text(text):
     tokens = tokenizer(text, return_tensors="pt", padding=True)
