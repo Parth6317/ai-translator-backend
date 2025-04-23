@@ -1,6 +1,6 @@
 🌐 AI-Based English to Hindi Translator using NLP 🎤
 
-This project is a web-based AI translator that converts **English text to Hindi**, and provides **Hindi audio output** using natural language processing (NLP) and speech synthesis.
+This project is a web-based AI translator that converts **English text to Hindi**,using natural language processing (NLP) and speech synthesis.
 
 🚀 Live Demo
 
