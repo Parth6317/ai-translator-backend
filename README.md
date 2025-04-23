@@ -11,7 +11,6 @@ This project is a web-based AI translator that converts **English text to Hindi*
 🧠 Features
 
 - ✅ **English to Hindi translation** using Hugging Face MarianMT
-- 🔊 **Hindi audio output** via Google Text-to-Speech (gTTS)
 - 💻 Clean and minimal **Streamlit-based user interface**
 - ☁ Fully **hosted on Streamlit Cloud**
 - 🔁 **Auto-clearable audio playback** for smooth UX
