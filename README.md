@@ -26,7 +26,6 @@ This project is a web-based AI translator that converts **English text to Hindi*
 | Streamlit               | Frontend UI & deployment           |
 | Hugging Face Transformers | NLP translation model            |
 | MarianMT                | English → Hindi translation        |
-| gTTS (Google TTS)       | Hindi speech synthesis             |
 | Torch (PyTorch)         | Backend for translation model      |
 | GitHub + Streamlit Cloud| Version control & deployment       |
 
