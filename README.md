@@ -13,7 +13,6 @@ This project is a web-based AI translator that converts **English text to Hindi*
 - ✅ **English to Hindi translation** using Hugging Face MarianMT
 - 💻 Clean and minimal **Streamlit-based user interface**
 - ☁ Fully **hosted on Streamlit Cloud**
-- 🔁 **Auto-clearable audio playback** for smooth UX
 
 ---
 
@@ -66,7 +65,6 @@ Folder Structure
 english-hindi-translator-nlp/
 ├── app.py                  # Main Streamlit app script
 ├── requirements.txt        # List of Python dependencies
-├── assets/                 # Audio or image assets (if any)
 ├── utils/                  # Helper functions or model loaders
 └── README.md               # Project documentation
 ```
